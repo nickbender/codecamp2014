@@ -1,7 +1,7 @@
 require 'artoo'
 
 connection :joystick, :adaptor => :joystick
-device :joystick, :driver => :ps3, :connection => :joystick, :interval => 0.5
+device :joystick, :driver => :ps3, :connection => :joystick, :interval => 0.1
 
 work do
   on joystick, :joystick => proc { |caller, value|
